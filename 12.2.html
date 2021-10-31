@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+            overflow: auto;
+        }
+         body{
+           
+          border: 1px solid black;
+          font-size: 20px;
+       }
+       @media (max-width: 500px) {
+        .box-1,
+        .box-2,
+        .box-3,
+        .box-4{
+            width: 100px;
+            float: none;
+            margin: auto;
+               
+       }
+    }
+       
+       @media  (min-width:501px) and (max-width: 768px) {
+        .box-1,
+        .box-2{
+        
+            width: 50%;
+            float: left;
+            margin: auto;
+       }
+       .box-3,
+        .box-4{
+        
+            width: 50%;
+            float: right;
+            margin: auto;
+       }
+       
+   }
+   @media  (min-width:1200px)  {
+        .box-1,
+        .box-2,
+        .box-3,
+        .box-4{
+            width: 25%;
+            float: left;
+            margin: auto;
+       }
+        
+           
+       }
+       
+    </style>
+
+</head>
+<body>
+    <div class="box-1">
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. s.</p>
+    </div>
+    <div class="box-2">
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur, s </p>
+    </div>
+    
+    <div class="box-3">
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pard.</p>
+    </div>
+    <div class="box-4">
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur .</p>
+    </div>
+    
+    
+    
+</body>
+</html>
