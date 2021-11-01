@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            width: 50vw;
+            height: 100vh;
+            color: black;
+
+        }
+        .para1,
+        .para2{
+            margin: 40px;
+            position: relative;
+            
+        }
+        a{
+            position: relative;
+        }
+          a:hover:after{
+             content:attr(data);
+             width: 110px;
+             background-color: coral;
+             border-radius: 14px;
+             text-align: center;
+             color: black;
+             font-size: 16px;
+             position: absolute;             
+            top: -30px;
+            left: 0px;
+
+        }
+       
+    </style>
+</head>
+<body>
+<div class="para1">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span><a  href="#" data="this is my tool!">Labore </a></span> architecto praesentium placeat sunt, veritatis deserunt dicta harum reiciendis in quis natus omnis quasi alias soluta totam sit nesciunt iste iusto voluptatum ea! Deserunt natus commodi aliquid recusandae aliquam sed, qui in eum mollitia quaerat explicabo nihil voluptas dolorem accusantium quae quas, fugiat dicta? Aut ipsam vitae, ad, accusantium ipsa corrupti incidunt, praesentium accusamus minus sint voluptate? Aperiam, asperiores, aliquam eligendi veniam molestias aspernatur repudiandae vero illum hic cumque tenetur delectus inventore aut! Debitis quibusdam rerum consequatur voluptate iste facilis aspernatur eligendi, cum modi laudantium expedita mollitia libero ullam ipsum voluptatum!</p>
+  </div>  
+<div class="para2">
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae quidem beatae, hic at necessitatibus <a href="#" data="this is me!">consequatur </a> cumque nam minima ex explicabo ducimus, esse dolor accusantium nihil corporis et laborum qui rem id ab, laboriosam aut neque molestiae. Aut ea culpa explicabo quae autem, earum repellendus sit libero numquam odio expedita reiciendis error, et non rem! Perferendis error ex aut maxime rem repellendus architecto ullam voluptatem temporibus aliquam, quisquam modi voluptate culpa repellat corporis labore ipsum a tenetur eos cupiditate vel pariatur quibusdam? Excepturi aliquam eos expedita repellendus quibusdam, veniam ipsa eius temporibus, sit iusto, facilis dolores sed nisi incidunt aut laboriosam.</p></body>
+</div>
+</html>
