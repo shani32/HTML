@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+ }  
+ p{
+     font-size: 40px;
+ } 
+    .box-1,
+    .box-2{
+       
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        width: 50%;
+        height: 20%;
+        position: relative;
+        color: white;
+        
+        
+        
+}
+    .box-1:after{
+        content: "";
+       width:30px;
+       height: 30px;
+       position: absolute;
+       top: 50px;
+       left: 0px;
+       border-left: 3px solid yellow;
+       border-top: 3px solid yellow;
+       
+       
+    }
+    .box-1:before{
+        content: "";
+       width:30px;
+       height: 30px;
+       position: absolute;
+       top: 50px;
+       right: 0px;
+       border-right: 3px solid yellow;
+       border-top: 3px solid yellow;
+       
+       
+    }
+    .box-2:after{
+        content: "";
+       width:30px;
+       height: 30px;
+       position: absolute;
+       bottom: 50px;
+       left: 0px;
+       border-left: 3px solid yellow;
+       border-bottom: 3px solid yellow;
+       
+       
+    }
+    .box-2:before{
+        content: "";
+       width:30px;
+       height: 30px;
+       position: absolute;
+       bottom: 50px;
+       right: 0px;
+       border-right: 3px solid yellow;
+       border-bottom: 3px solid yellow;
+       
+       
+    }
+
+
+  
+   
+
+   
+
+</style>
+<body>
+    <div class="box-1">
+        <div class="border-1"></div> 
+    </div>
+    <p>cool border</p>
+    <div class="box-2">
+        <div class="border-2"></div>
+    </div>
+
+        
+   
+    
+</body>
+</html>
