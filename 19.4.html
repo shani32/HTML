@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     
+        
+        .container{
+            display: flex;
+            justify-content:space-between;
+            background-color: rgb(165, 145, 137);
+           
+           
+        }
+        .menu{
+            display: flex;
+            align-self: center;
+            justify-content: space-between;
+            position: relative;
+            padding: 10px 20px;
+        }
+        .item{
+            margin: 10px;
+            height: 50px;
+            width: 70px;
+            cursor: pointer;
+            transition: border 3s;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            
+        }
+        .item::before{
+            content: '';
+            top: 0;
+            left: 0px;
+            width: 100%;
+            position: absolute;
+            border-top: 5px black solid;
+            transform: translateX(-100%);
+            transition-duration: 0.5s;
+
+        }
+        .item::after{
+            content: '';
+            bottom: 0;
+            right: 0px;
+            width: 100%;
+            position: absolute;
+            border-top: 5px black solid;
+            transform: translateX(100%);
+            transition: 0.5s;
+            
+        }
+        .item:hover::before,
+        .item:hover:after{
+            transform: translateX(0);
+            
+        }
+        /* .item:hover{
+            background: gray;
+            border-top: black 2px solid;
+            border-bottom:black 2px solid;
+            
+           
+        } */
+       
+        .logo{
+            margin: 10px;
+        }
+      
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="logo">APPLE</div>
+        <div class="menu">
+            <div class="item item-1">HOME</div>
+            <div class="item item-2">ABOUT </div>
+            <div class="item item-3">PORTFOLIO</div>
+            <div class="item item-4">CONTACT</div>
+        </div>
+    </div>
+
+</body>
+</html>

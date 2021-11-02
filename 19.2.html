@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primary-color:rgb(127, 127, 199);
+            --secondary-color:rgb(167, 79, 112);
+        }
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    body{
+        height: 100vh;
+        width: 100vw;
+        background-color: black;
+        
+    }
+    .box{
+        width:300px;
+        height: 300px;
+        background-color: var(--primary-color);
+        position: relative;
+        /* top: 0px;
+        left: 50%;  */
+        top: 0px;
+    }
+
+       
+    .box::after{
+        content: '';
+        width: 300px;
+        height: 300px;
+        background-color: var(--secondary-color);
+        position: absolute;
+        top: 0px;
+        left: 0%;
+        /* right: 100%; */
+        transform:translateX(300px);
+        transition-duration: 3s;
+        
+    }
+    .box:hover::after{
+        content: '';
+        background-color: rgb(95, 154, 172);
+        top: 0px;
+        left: 0%;
+        transform: translateX(0px);
+        
+        
+        
+    }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    
+</body>
+</html>
