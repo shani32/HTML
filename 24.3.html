@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+            overflow: auto;
+            
+          }
+      
+       
+    
+       
+    .container{
+        /* width: 100vw;
+        height: 100vh; */
+        display:grid;
+        grid-template-areas: 
+        'one one one'
+        'two three three'
+        'two three three'
+        'four four four'
+        'five five five';   
+
+    }
+    .box{
+        border: 2px solid black;
+        background: gray;
+        padding: 5rem;
+        font-weight: bold;
+        text-align: center;
+        /* border-radius: 10%; */
+    }
+    .box-1{
+        background: red;
+        grid-area: one;
+    }
+    .box-2{
+        background: blue;
+        grid-area: two;
+       
+    }
+    .box-3{
+        background: rgb(32, 214, 102);
+        grid-area: three;
+       
+    }
+    .box-4{
+        background: rgb(118, 23, 173);
+        grid-area: four;
+      
+    }
+    .box-5{
+        background: rgb(208, 221, 34);
+        grid-area: five;
+        
+    }
+    /* @media (max-width: 768px) {
+        .container {
+        grid-template-areas: 
+        'one'
+        'two'
+        'three'
+        'four'
+        'five'; 
+           
+          }      
+       } */
+
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box-1">item 1</div>
+        <div class="box box-2">item 2</div>
+        <div class="box box-3">item 3</div>
+        <div class="box box-4">item 4</div>
+        <div class="box box-5">item 5</div>  
+    </div>
+    
+</body>
+</html>
